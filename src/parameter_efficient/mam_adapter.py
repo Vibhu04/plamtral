@@ -1,7 +1,7 @@
 from transformers import GPT2LMHeadModel
 import torch.nn as nn
-from parallel_adapter import LayerAdaptered, Sum
-from prefix_tuning import PrefixTuned
+from parameter_efficient.parallel_adapter import LayerAdaptered, Sum
+from parameter_efficient.prefix_tuning import PrefixTuned
 
 
 

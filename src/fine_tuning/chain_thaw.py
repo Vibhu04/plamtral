@@ -1,6 +1,6 @@
 from transformers import GPT2LMHeadModel
 import torch.nn as nn
-from utils import freeze_model, chain_thaw
+from fine_tuning.utils import freeze_model, chain_thaw
 
 class Model_with_Chain_Thaw():
 

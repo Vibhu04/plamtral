@@ -7,7 +7,7 @@ from tqdm import tqdm
 import transformers
 import random
 import sys
-from utils import *
+from tl_lib.utils import *
 
 
 
@@ -25,10 +25,11 @@ def train(
     save_model_freq = 300,
     val_freq = 100,
     dropout = 0.1,
-    write_logs = True,
+    write_logs = False,
     logs_folder = 'runs',
     delete_logs = True,
-    load_existing_model = True,
+    load_existing_model = False,
+    verbose = False
     ):
   
 
@@ -57,12 +58,12 @@ def train(
         for root, dirs, files in os.walk(logs_folder):
             for file in files:
                 os.remove(os.path.join(root, file))
-        print("Logs deleted")
+
 
     if load_existing_model:
         state_dict = torch.load(model_save_name)
         model.load_state_dict(state_dict)
-        print("Existing model loaded")
+
 
     model = model.to(device)
 

@@ -1,6 +1,6 @@
 from transformers import GPT2LMHeadModel
 import torch.nn as nn
-from utils import freeze_except_bias
+from fine_tuning.utils import freeze_except_bias
 
 class Model_with_BitFit():
 

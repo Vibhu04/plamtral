@@ -4,9 +4,9 @@ from torch.optim import AdamW
 import random
 from transformers import get_linear_schedule_with_warmup
 from transformers import GPT2LMHeadModel, AutoConfig
-from ...fine_tuning.utils import *
-from ...fine_tuning.stlr import STLR
-from ...data.dataset import TL_Dataset
+from fine_tuning.utils import *
+from fine_tuning.stlr import STLR
+from data.dataset import TL_Dataset
 
 
 

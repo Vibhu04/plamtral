@@ -1,6 +1,6 @@
 from transformers import GPT2LMHeadModel
 import torch.nn as nn
-from utils import freeze_first_n_layers, freeze_nth_layer
+from fine_tuning.utils import freeze_first_n_layers, freeze_nth_layer
 
 class Model_with_vanilla_finetuning():
 
