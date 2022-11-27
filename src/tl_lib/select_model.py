@@ -1,12 +1,12 @@
-from parameter_efficient.mam_adapter import Model_with_mam_adapter
-from parameter_efficient.prefix_tuning import Model_with_prefix_tuning
-from parameter_efficient.prompt_tuning import Model_with_prompt_tuning
-from parameter_efficient.parallel_adapter import Model_with_parallel_adapter
-from parameter_efficient.adapterdrop import *
-from parameter_efficient.adapter import Model_with_adapter
-from parameter_efficient.adapter_bapna import Model_with_adapter_bapna
-from parameter_efficient.lora import Model_with_LoRA
-from lib.utils import get_GPT2LMH
+from ...parameter_efficient.mam_adapter import Model_with_mam_adapter
+from ...parameter_efficient.prefix_tuning import Model_with_prefix_tuning
+from ...parameter_efficient.prompt_tuning import Model_with_prompt_tuning
+from ...parameter_efficient.parallel_adapter import Model_with_parallel_adapter
+from ...parameter_efficient.adapterdrop import *
+from ...parameter_efficient.adapter import Model_with_adapter
+from ...parameter_efficient.adapter_bapna import Model_with_adapter_bapna
+from ...parameter_efficient.lora import Model_with_LoRA
+from utils import get_GPT2LMH
 
 
 def select_model(base_model, model_size, technique, dropout):

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: plamtral
+Version: 0.0.3
+Summary: A transfer learning library for pre-trained language models.
+Home-page: https://github.com/Vibhu04/plamtral
+Author: Vibhu
+Author-email: vibhud04@gmail.com
+Project-URL: Bug Tracker, https://github.com/Vibhu04/plamtral/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# plamtral
+
+PLaMTraL - A transfer learning library for pre-trained language models.
+
+
+## Authors
+
+- [@Vibhu04](https://www.github.com/Vibhu04)
+
+
+## Installation
+
+Install plamtral with pip:
+
+```bash
+pip install plamtral
+```
+
+## Requirements
+
+* torch 1.12.1+cu113
+* tqdm 4.64.1
+* transformers 4.24.0
+* nltk 3.7
+* torchmetrics
+    

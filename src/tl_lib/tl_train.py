@@ -7,7 +7,7 @@ from tqdm import tqdm
 import transformers
 import random
 import sys
-from lib.utils import *
+from utils import *
 
 
 

@@ -1,6 +1,6 @@
 from transformers import GPT2LMHeadModel
 import torch.nn as nn
-from fine_tuning.utils import freeze_model, gradually_unfreeze
+from utils import freeze_model, gradually_unfreeze
 
 class Model_with_gradual_unfreezing():
 

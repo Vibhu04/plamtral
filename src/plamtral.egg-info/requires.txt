@@ -1,0 +1,5 @@
+nltk
+torch
+torchmetrics
+tqdm
+transformers

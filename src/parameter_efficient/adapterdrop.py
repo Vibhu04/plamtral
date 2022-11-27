@@ -1,6 +1,6 @@
 from transformers import GPT2LMHeadModel
 import torch.nn as nn
-from parameter_efficient.adapter import Adaptered
+from adapter import Adaptered
 
 
 class Model_with_adapterdrop_spec():
