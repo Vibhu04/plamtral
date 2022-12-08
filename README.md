@@ -44,7 +44,7 @@ from tl_lib.utils import load_dataloaders
 from tl_lib.tl_train import train
 
 # Load the GPT2 model with Houlsby Adapters
-model_obj = Model_with_parallel_adapter('GPT2')
+model_obj = Model_with_adapter('GPT2')
 # Create the train, validation and test dataloaders from the dataset file
 train_loader, val_loader, test_loader = load_dataloaders('GPT2', dataset_path='path/to/dataset_file')
 # Train the model
