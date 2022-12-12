@@ -22,9 +22,7 @@ pip install plamtral
 ### Fine-tuning
 Fine-tuning large pretrained language models on downstream tasks remains
 the de-facto learning paradigm in NLP. However, several fine tuning approaces exist other than the usual vanilla variant, which can be more effective or efficient. The fine tuning techniques provided in this package are:
-- **BitFit** ```python Model_with_BitFit``` 
-
-A sparse fine tuning method where only the bias terms of the model (or a subset of them) are being modified. Reference: https://arxiv.org/pdf/2106.10199.pdf.
+- **BitFit** - A sparse fine tuning method where only the bias terms of the model (or a subset of them) are being modified. Reference: https://arxiv.org/pdf/2106.10199.pdf.
 - **Chain thaw** - an approach that sequentially unfreezes and fine-tunes a single layer at a time. Reference: https://arxiv.org/pdf/1708.00524.pdf.
 - **ULMFiT** - an effective transfer learning method that introduces techniques (slanted triangular learning rate, disciminative fine-tuning, and gradual unfreezing) that are key for fine-tuning a language model. Reference: https://arxiv.org/pdf/1801.06146.pdf.
 - **Vanilla fine tuning** - the standard fine-tuning approach (fine-tune the whole model, fine-tune the last n layers, or fine-tune a specific layer).
