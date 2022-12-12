@@ -7,7 +7,7 @@ PLaMTraL - A transfer learning library for pre-trained language models.
 Install plamtral with pip:
 
 ```bash
-  pip install plamtral
+pip install plamtral
 ```
 
 ## Requirements
